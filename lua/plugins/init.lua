@@ -187,29 +187,6 @@ require("packer").startup(function(use)
 		end
 	    end
 
-	    require("lspconfig").sumneko_lua.setup({
-		settings = {
-		    Lua = {
-			version = "LuaJIT"
-		    },
-
-		    diagnostics = {
-			globals = {"vim"}
-		    },
-
-		    workspace = {
-			library = vim.api.nvim_get_runtime_file("", true)
-		    },
-
-		    telemetry = {
-			enable = false
-		    }
-		},
-
-		capabilities = capabilities,
-		on_attach = on_attach,
-    })
-
 	    require("lspconfig").pyright.setup({
 		capabilities = capabilities,
 		on_attach = on_attach,

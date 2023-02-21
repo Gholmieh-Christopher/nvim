@@ -14,3 +14,7 @@ map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 map("n", "<leader>f", ":Telescope<CR>", opts)
 
 map("n", "<leader>c", [[:lua require("neogen").generate()<CR>]], opts)
+
+map("n", "<leader>r", ":BufferPrevious<CR>", opts)
+map("n", "<leader>t", ":BufferNext<CR>", opts)
+

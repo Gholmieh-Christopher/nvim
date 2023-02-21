@@ -20,7 +20,7 @@ require("packer").startup(function(use)
 	    })
 	end
     })
-    
+
     use({
 	"nvim-tree/nvim-tree.lua",
 
@@ -195,6 +195,16 @@ require("packer").startup(function(use)
 	    require("lspconfig").clangd.setup({
 		capabilities = capabilities,
 		on_attach = on_attach,
+	    })
+
+	    require("lspconfig").gopls.setup({
+		capabilities = capabilities,
+		on_attach = on_attach
+	    })
+
+	    require("lspconfig").lua_ls.setup({
+		capabilities = capabilities,
+		on_attach = on_attach
 	    })
 	end
     })

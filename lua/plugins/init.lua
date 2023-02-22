@@ -250,7 +250,9 @@ require("packer").startup(function(use)
 	"andweeb/presence.nvim",
 
 	config = function()
-	    require("presence").setup()
+	    require("presence").setup({
+		auto_update = true
+	    })
 	end
     })
 end)

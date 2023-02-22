@@ -22,6 +22,15 @@ require("packer").startup(function(use)
     })
 
     use({
+	"rcarriga/nvim-notify",
+
+	config = function()
+	    vim.opt.termguicolors = true
+	    vim.notify = require("notify")
+	end
+    })
+
+    use({
 	"nvim-tree/nvim-tree.lua",
 
 	requires = {

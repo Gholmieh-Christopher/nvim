@@ -86,7 +86,7 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["barbar.nvim"] = {
-    config = { "\27LJ\2\n×\1\0\0\5\0\t\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\5\0005\4\4\0>\4\1\0035\4\5\0>\4\2\0035\4\6\0>\4\3\0035\4\a\0>\4\4\3=\3\b\2B\0\2\1K\0\1\0\16diagnostics\1\0\1\fenabled\2\1\0\1\fenabled\1\1\0\1\fenabled\1\1\0\2\fenabled\2\ticon\bï¬€\1\0\4\14closeable\2\rtabpages\2\14auto_hide\1\14animation\2\nsetup\15bufferline\frequire\0" },
+    config = { "\27LJ\2\n×\1\0\0\5\0\t\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\5\0005\4\4\0>\4\1\0035\4\5\0>\4\2\0035\4\6\0>\4\3\0035\4\a\0>\4\4\3=\3\b\2B\0\2\1K\0\1\0\16diagnostics\1\0\1\fenabled\2\1\0\1\fenabled\1\1\0\1\fenabled\1\1\0\2\ticon\bï¬€\fenabled\2\1\0\4\14animation\2\14closeable\2\rtabpages\2\14auto_hide\1\nsetup\15bufferline\frequire\0" },
     loaded = true,
     path = "/home/christopherg/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
@@ -142,13 +142,13 @@ _G.packer_plugins = {
     url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\nÆ\1\0\0\a\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\b\0005\4\6\0004\5\3\0005\6\4\0>\6\1\0055\6\5\0>\6\2\5=\5\a\4=\4\t\3=\3\n\2B\0\2\1K\0\1\0\tview\rmappings\1\0\0\tlist\1\0\0\1\0\2\bkey\6f\vaction\rdir_down\1\0\2\bkey\6r\vaction\vdir_up\1\0\1\fsort_by\19case_sensitive\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\nÆ\1\0\0\a\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\b\0005\4\6\0004\5\3\0005\6\4\0>\6\1\0055\6\5\0>\6\2\5=\5\a\4=\4\t\3=\3\n\2B\0\2\1K\0\1\0\tview\rmappings\1\0\0\tlist\1\0\0\1\0\2\vaction\rdir_down\bkey\6f\1\0\2\vaction\vdir_up\bkey\6r\1\0\1\fsort_by\19case_sensitive\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
     path = "/home/christopherg/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\n÷\1\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\rrefactor\17smart_rename\1\0\1\venable\2\26highlight_definitions\1\0\0\1\0\1\venable\2\14highlight\1\0\2&additional_vim_regex_highlighting\1\venable\1\1\0\1\17auto_install\2\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\n÷\1\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\rrefactor\17smart_rename\1\0\1\venable\2\26highlight_definitions\1\0\0\1\0\1\venable\2\14highlight\1\0\2\venable\1&additional_vim_regex_highlighting\1\1\0\1\17auto_install\2\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = true,
     path = "/home/christopherg/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -188,13 +188,9 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-notify
-time([[Config for nvim-notify]], true)
-try_loadstring("\27LJ\2\nT\0\0\4\0\5\0\n6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0006\1\4\0'\3\3\0B\1\2\2=\1\3\0K\0\1\0\frequire\vnotify\18termguicolors\bopt\bvim\0", "config", "nvim-notify")
-time([[Config for nvim-notify]], false)
 -- Config for: barbar.nvim
 time([[Config for barbar.nvim]], true)
-try_loadstring("\27LJ\2\n×\1\0\0\5\0\t\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\5\0005\4\4\0>\4\1\0035\4\5\0>\4\2\0035\4\6\0>\4\3\0035\4\a\0>\4\4\3=\3\b\2B\0\2\1K\0\1\0\16diagnostics\1\0\1\fenabled\2\1\0\1\fenabled\1\1\0\1\fenabled\1\1\0\2\fenabled\2\ticon\bï¬€\1\0\4\14closeable\2\rtabpages\2\14auto_hide\1\14animation\2\nsetup\15bufferline\frequire\0", "config", "barbar.nvim")
+try_loadstring("\27LJ\2\n×\1\0\0\5\0\t\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\5\0005\4\4\0>\4\1\0035\4\5\0>\4\2\0035\4\6\0>\4\3\0035\4\a\0>\4\4\3=\3\b\2B\0\2\1K\0\1\0\16diagnostics\1\0\1\fenabled\2\1\0\1\fenabled\1\1\0\1\fenabled\1\1\0\2\ticon\bï¬€\fenabled\2\1\0\4\14animation\2\14closeable\2\rtabpages\2\14auto_hide\1\nsetup\15bufferline\frequire\0", "config", "barbar.nvim")
 time([[Config for barbar.nvim]], false)
 -- Config for: nightly.nvim
 time([[Config for nightly.nvim]], true)
@@ -202,16 +198,20 @@ try_loadstring("\27LJ\2\n®\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\
 time([[Config for nightly.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\nÆ\1\0\0\a\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\b\0005\4\6\0004\5\3\0005\6\4\0>\6\1\0055\6\5\0>\6\2\5=\5\a\4=\4\t\3=\3\n\2B\0\2\1K\0\1\0\tview\rmappings\1\0\0\tlist\1\0\0\1\0\2\bkey\6f\vaction\rdir_down\1\0\2\bkey\6r\vaction\vdir_up\1\0\1\fsort_by\19case_sensitive\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\2\nÆ\1\0\0\a\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\b\0005\4\6\0004\5\3\0005\6\4\0>\6\1\0055\6\5\0>\6\2\5=\5\a\4=\4\t\3=\3\n\2B\0\2\1K\0\1\0\tview\rmappings\1\0\0\tlist\1\0\0\1\0\2\vaction\rdir_down\bkey\6f\1\0\2\vaction\vdir_up\bkey\6r\1\0\1\fsort_by\19case_sensitive\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
+-- Config for: neogen
+time([[Config for neogen]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vneogen\frequire\0", "config", "neogen")
+time([[Config for neogen]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\n÷\1\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\rrefactor\17smart_rename\1\0\1\venable\2\26highlight_definitions\1\0\0\1\0\1\venable\2\14highlight\1\0\2\venable\1&additional_vim_regex_highlighting\1\1\0\1\17auto_install\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Config for: presence.nvim
 time([[Config for presence.nvim]], true)
 try_loadstring("\27LJ\2\nJ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\16auto_update\2\nsetup\rpresence\frequire\0", "config", "presence.nvim")
 time([[Config for presence.nvim]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\n÷\1\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\rrefactor\17smart_rename\1\0\1\venable\2\26highlight_definitions\1\0\0\1\0\1\venable\2\14highlight\1\0\2&additional_vim_regex_highlighting\1\venable\1\1\0\1\17auto_install\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
 try_loadstring("\27LJ\2\n-\0\1\4\1\2\0\5-\1\0\0009\1\0\0019\3\1\0B\1\2\1K\0\1\0\0À\tbody\15lsp_expandš\1\0\1\3\2\4\0\21-\1\0\0009\1\0\1B\1\1\2\15\0\1\0X\2\4€-\1\0\0009\1\1\1B\1\1\1X\1\v€-\1\1\0009\1\2\1B\1\1\2\15\0\1\0X\2\4€-\1\1\0009\1\3\1B\1\1\1X\1\2€\18\1\0\0B\1\1\1K\0\1\0\1À\0À\19expand_or_jump\23expand_or_jumpable\21select_next_item\fvisibleŽ\1\0\1\4\2\4\0\23-\1\0\0009\1\0\1B\1\1\2\15\0\1\0X\2\4€-\1\0\0009\1\1\1B\1\1\1X\1\r€-\1\1\0009\1\2\1)\3ÿÿB\1\2\2\15\0\1\0X\2\5€-\1\1\0009\1\3\1)\3ÿÿB\1\2\1X\1\2€\18\1\0\0B\1\1\1K\0\1\0\1À\0À\tjump\rjumpable\21select_prev_item\fvisible¬\1\0\2\6\0\a\0\0169\2\0\0009\2\1\2\15\0\2\0X\3\b€6\2\2\0'\4\3\0B\2\2\0029\2\4\2\18\4\0\0\18\5\1\0B\2\3\1X\2\3€6\2\5\0'\4\6\0B\2\2\1K\0\1\0\31Cannot connect nvim-navic.\twarn\vattach\15nvim-navic\frequire\27documentSymbolProvider\24server_capabilitiesÙ\5\1\0\r\0+\0V6\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0026\2\0\0'\4\3\0B\2\2\0029\2\4\2B\2\1\0019\2\4\0015\4\b\0005\5\6\0003\6\5\0=\6\a\5=\5\t\0049\5\n\0019\5\v\0059\5\f\0055\a\14\0009\b\n\0019\b\r\b)\nüÿB\b\2\2=\b\15\a9\b\n\0019\b\r\b)\n\4\0B\b\2\2=\b\16\a9\b\n\0019\b\17\bB\b\1\2=\b\18\a9\b\n\0019\b\19\b5\n\22\0009\v\20\0019\v\21\v=\v\23\nB\b\2\2=\b\24\a9\b\n\0013\n\25\0005\v\26\0B\b\3\2=\b\27\a9\b\n\0013\n\28\0005\v\29\0B\b\3\2=\b\30\aB\5\2\2=\5\n\0044\5\3\0005\6\31\0>\6\1\0055\6 \0>\6\2\5=\5!\4B\2\2\0016\2\0\0'\4\"\0B\2\2\0029\2#\2B\2\1\0023\3$\0005\4%\0006\5&\0\18\a\4\0B\5\2\4X\b\t€6\n\0\0'\f'\0B\n\2\0028\n\t\n9\n\4\n5\f(\0=\2)\f=\3*\fB\n\2\1E\b\3\3R\bõ\1272\0\0€K\0\1\0\14on_attach\17capabilities\1\0\0\14lspconfig\vipairs\1\a\0\0\fpyright\vclangd\ngopls\vlua_ls\thtml\ncssls\0\25default_capabilities\17cmp_nvim_lsp\fsources\1\0\1\tname\fluasnip\1\0\1\tname\rnvim_lsp\f<S-Tab>\1\3\0\0\6i\6s\0\n<Tab>\1\3\0\0\6i\6s\0\t<CR>\rbehavior\1\0\1\vselect\2\fReplace\20ConfirmBehavior\fconfirm\14<C-Space>\rcomplete\n<C-f>\n<C-d>\1\0\0\16scroll_docs\vinsert\vpreset\fmapping\fsnippet\1\0\0\vexpand\1\0\0\0\nsetup\15nvim-navic\bcmp\fluasnip\frequire\0", "config", "nvim-lspconfig")
@@ -224,14 +224,14 @@ time([[Config for Comment.nvim]], false)
 time([[Config for lualine.nvim]], true)
 try_loadstring("\27LJ\2\n³\1\0\0\b\0\f\0\0206\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\1\3\0015\3\n\0005\4\b\0004\5\3\0005\6\6\0009\a\4\0>\a\1\0069\a\5\0=\a\a\6>\6\1\5=\5\t\4=\4\v\3B\1\2\1K\0\1\0\rsections\1\0\0\14lualine_c\1\0\0\tcond\1\0\0\17is_available\17get_location\nsetup\flualine\15nvim-navic\frequire\0", "config", "lualine.nvim")
 time([[Config for lualine.nvim]], false)
--- Config for: neogen
-time([[Config for neogen]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vneogen\frequire\0", "config", "neogen")
-time([[Config for neogen]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14telescope\frequire\0", "config", "telescope.nvim")
 time([[Config for telescope.nvim]], false)
+-- Config for: nvim-notify
+time([[Config for nvim-notify]], true)
+try_loadstring("\27LJ\2\nT\0\0\4\0\5\0\n6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0006\1\4\0'\3\3\0B\1\2\2=\1\3\0K\0\1\0\frequire\vnotify\18termguicolors\bopt\bvim\0", "config", "nvim-notify")
+time([[Config for nvim-notify]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

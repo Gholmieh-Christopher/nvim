@@ -8,6 +8,10 @@
     ```
 	sudo pacman -S clang	
     ```
+* CSSLS:
+    ```
+	sudo npm i -g vscode-langservers-extracted
+    ```
 
 * Gopls:
     ```

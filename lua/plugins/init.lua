@@ -196,30 +196,21 @@ require("packer").startup(function(use)
 		end
 	    end
 
-	    require("lspconfig").pyright.setup({
-		capabilities = capabilities,
-		on_attach = on_attach,
-	    })
+	    local servers = {
+		"pyright",
+		"clangd",
+		"gopls",
+		"lua_ls",
+		"html",
+		"cssls"
+	    }
 
-	    require("lspconfig").clangd.setup({
-		capabilities = capabilities,
-		on_attach = on_attach,
-	    })
-
-	    require("lspconfig").gopls.setup({
-		capabilities = capabilities,
-		on_attach = on_attach
-	    })
-
-	    require("lspconfig").lua_ls.setup({
-		capabilities = capabilities,
-		on_attach = on_attach
-	    })
-
-	    require("lspconfig").html.setup({
-		capabilities = capabilities,
-		on_attach = on_attach
-	    })
+	    for _, language_server in ipairs(servers) do
+		require("lspconfig")[language_server].setup({
+		    capabilities = capabilities,
+		    on_attach = on_attach
+		})
+	    end
 	end
     })
     

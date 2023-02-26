@@ -203,7 +203,7 @@ require("packer").startup(function(use)
 		"lua_ls",
 		"html",
 		"cssls",
-		"denols"
+		"tsserver"
 	    }
 
 	    for _, language_server in ipairs(servers) do

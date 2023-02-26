@@ -202,13 +202,15 @@ require("packer").startup(function(use)
 		"gopls",
 		"lua_ls",
 		"html",
-		"cssls"
+		"cssls",
+		"denols"
 	    }
 
 	    for _, language_server in ipairs(servers) do
 		require("lspconfig")[language_server].setup({
 		    capabilities = capabilities,
-		    on_attach = on_attach
+		    on_attach = on_attach,
+		    enable = true
 		})
 	    end
 	end
